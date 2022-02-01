@@ -4,7 +4,7 @@ var app = express()
 var port = process.env.PORT || 7077
 
 const client = new Client({
-    host : "localhost",
+    host : "localhost://127.0.0.1",
     database : "student",
     port : 5432,
     user : "postgres",
