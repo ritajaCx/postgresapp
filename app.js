@@ -4,7 +4,7 @@ var app = express()
 var port = process.env.PORT || 7077
 
 const client = new Client({
-    host : "localhost",
+    host : "127.0.0.1:3306",
     database : "student",
     port : 5432,
     user : "postgres",
@@ -75,17 +75,17 @@ app.get("/display", function(req,res){
 })
 
 //update data
-app.get("/update", function(req,res){
+// app.get("/update", function(req,res){
 
-    var sql4= "update subject set staff='RD' where name='English';"
-    client.query(sql4, function(err){
-        if(err){
-            res.send(err)
-            return
-        }
-        res.send("1 row updated successfully!")
-    })
+//     var sql4= "update subject set staff='RD' where name='English';"
+//     client.query(sql4, function(err){
+//         if(err){
+//             res.send(err)
+//             return
+//         }
+//         res.send("1 row updated successfully!")
+//     })
     
-})
+// })
 
 app.listen(port, ()=>console.log("server running at",port))
