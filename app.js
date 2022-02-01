@@ -5,9 +5,9 @@ var port = process.env.PORT || 7077
 
 const client = new Client({
     host : "ec2-54-235-98-1.compute-1.amazonaws.com",
-    database : "dbcmsfvjllptjt",
+    database : "ddphf1r1skk9n9",
     port : 5432,
-    user : "ddphf1r1skk9n9",
+    user : "dbcmsfvjllptjt",
     password : "7aeabd9861fc9732d4a8171ef8d7ec97b02895fd81f46317013efcd11a46eefe"
 
 })
