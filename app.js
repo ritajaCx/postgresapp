@@ -4,11 +4,11 @@ var app = express()
 var port = process.env.PORT || 7077
 
 const client = new Client({
-    host : "localhost",
-    database : "student",
+    host : "ec2-54-235-98-1.compute-1.amazonaws.com",
+    database : "dbcmsfvjllptjt",
     port : 5432,
-    user : "postgres",
-    password : "styx97"
+    user : "ddphf1r1skk9n9",
+    password : "7aeabd9861fc9732d4a8171ef8d7ec97b02895fd81f46317013efcd11a46eefe"
 
 })
 
